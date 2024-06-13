@@ -61,3 +61,6 @@ __blobstorage__
 examples/data
 !examples/data/.gitkeep
 .venv/
+
+# Nix
+result

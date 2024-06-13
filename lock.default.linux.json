@@ -1,0 +1,27 @@
+{
+  "fetchPipMetadata": {
+    "sources": {
+      "maturin": {
+        "is_direct": false,
+        "sha256": "786bf36a98c4e27cbebb1dc8e432c1bcbbb59e7a9719592cbb89e46a0ccd5bcc",
+        "type": "url",
+        "url": "https://files.pythonhosted.org/packages/d2/e0/886abd982f4dc1031cc947909e75e9bbbb4c2d76f5ffd23a7236784135af/maturin-1.5.1-py3-none-manylinux_2_12_x86_64.manylinux2010_x86_64.musllinux_1_1_x86_64.whl",
+        "version": "1.5.1"
+      },
+      "typing-extensions": {
+        "is_direct": false,
+        "sha256": "04e5ca0351e0f3f85c6853954072df659d0d13fac324d0072316b67d7794700d",
+        "type": "url",
+        "url": "https://files.pythonhosted.org/packages/26/9f/ad63fc0248c5379346306f8668cda6e2e2e9c95e01216d2b8ffd9ff037d0/typing_extensions-4.12.2-py3-none-any.whl",
+        "version": "4.12.2"
+      }
+    },
+    "targets": {
+      "default": {
+        "maturin": [],
+        "typing-extensions": []
+      }
+    }
+  },
+  "invalidationHash": "5c457457f200cf10dcd541bf616a33ab5cf7ae0b2fe3c0baa094acf2c921e205"
+}

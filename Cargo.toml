@@ -1,3 +1,52 @@
-[workspace]
-resolver = "2"
-members = ["object-store", "object-store-internal"]
+# [workspace]
+# resolver = "2"
+# members = ["object-store", "object-store-internal"]
+
+# [package]
+# name = "object-store-python"
+# version = "0.10.1"
+# authors = ["ijl <ijl@mailbox.org>"]
+# description = "Fast, correct Python JSON library supporting dataclasses, datetimes, and numpy"
+# edition = "2021"
+# resolver = "2"
+# rust-version = "1.72"
+# license = "Apache-2.0 OR MIT"
+# repository = "https://github.com/ijl/orjson"
+# homepage = "https://github.com/ijl/orjson"
+# readme = "README.md"
+# keywords = ["fast", "json", "dataclass", "dataclasses", "datetime", "rfc", "8259", "3339"]
+# include = [
+#     "Cargo.toml",
+#     "CHANGELOG.md",
+#     "data",
+#     "include",
+#     "LICENSE-APACHE",
+#     "LICENSE-MIT",
+#     "pyproject.toml",
+#     "README.md",
+#     "src",
+#     "test/*.py",
+#     "test/requirements.txt",
+# ]
+
+[package]
+name = "object-store-python"
+version = "0.1.10"
+edition = "2021"
+authors = ["Robert Pack <robstar.pack@gmail.com>"]
+description = "A generic object store interface for uniformly interacting with AWS S3, Google Cloud Storage, Azure Storage and local files."
+
+[dependencies]
+object-store-internal = { path = "./object-store-internal" }
+pyo3 = { version = "0.20", features = [
+  "extension-module",
+  "abi3",
+  "abi3-py38",
+] }
+
+[lib]
+name = "object_store"
+crate-type = ["cdylib"]
+
+[package.metadata.maturin]
+name = "object_store._internal"
